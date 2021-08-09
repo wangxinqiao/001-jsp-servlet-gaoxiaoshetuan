@@ -1,6 +1,7 @@
 # 001jsp+servlet高校社团管理系统
 
 ### 简介
+````
 高校社团管理系统分为前后台，角色分为三种：管理员、社长、普通社员。
 
 超级管理员角色包含以下功能：会员管理,物品管理,活动审批,系统用户管理,社团添加删除等功能。
@@ -12,7 +13,7 @@
 前台主要是展示社团列表、社团风采、社团活动、新闻列表
 前台登录后进入个人中心，在个人中心能申请加入社团、查看参加的社团活动等
 后台为管理员与社长使用，应用于对社团的管理及内容发布等。
-
+````
 源码获取：[ **点此获取** ](http://www.shuyue.fun/?type=productinfo&id=76)
 演示视频：[ **点此查看** ](https://www.bilibili.com/video/BV1xf4y1a7XC/)
 
@@ -28,8 +29,19 @@
 ### 使用技术
 使用技术：servlet+jsp+mysql 8.0
 
-### 数据库配置
-数据库使用mysql 8.0,注意版本要匹配，否则可能会产生连接异常的情况，导入sql文件team.sql.导入成功后，在db.properties中修改数据库相关配置
+### 使用说明
+````
+1. 使用Navicat或者其它工具，在mysql中创建对应名称的数据库，并导入项目的sql文件；注：数据库使用mysql 8.0,注意版本要匹配，否则可能会产生连接异常的情况，
+2. 将项目中db.properties配置文件中的数据库配置改为自己的配置
+3. 使用IDEA/Eclipse/MyEclipse导入项目，Eclipse/MyEclipse导入时，若为maven项目请选择maven;若为maven项目，导入成功后请执行maven clean;maven install命令，配置tomcat，然后运行；
+
+前台地址：http://localhost:8080/team/front/login.jsp
+普通社员账号：苏c  密码：123
+
+后台地址：http://localhost:8080/team/mui/login.jsp
+管理员账号：sys  密码：123456
+社长账号：苏悲   密码：123456
+````
 
 ## 运行截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0319/183335_6a999919_863230.png "屏幕截图.png")
